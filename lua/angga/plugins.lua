@@ -48,6 +48,9 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 	use("windwp/nvim-autopairs")
+	use("NvChad/nvim-colorizer.lua")
+	use("lewis6991/gitsigns.nvim")
+	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = function()
@@ -61,8 +64,6 @@ return packer.startup(function(use)
 			require("Comment").setup()
 		end,
 	})
-	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
-	use("lewis6991/gitsigns.nvim")
 	use({
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
@@ -72,7 +73,6 @@ return packer.startup(function(use)
 			"MunifTanjim/nui.nvim",
 		},
 	})
-	use("NvChad/nvim-colorizer.lua")
 
 	if packer_bootstrap then
 		require("packer").sync()
