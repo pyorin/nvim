@@ -17,3 +17,4 @@ keymap.set("n", "<S-l>", ":tabn<CR>")
 keymap.set("n", "<S-h>", ":tabp<CR>")
 
 keymap.set("n", "<leader>e", ":Neotree toggle float<CR>")
+keymap.set("n", "<leader>r", "<Plug>RestNvim")
