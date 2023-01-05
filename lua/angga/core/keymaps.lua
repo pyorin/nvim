@@ -3,8 +3,8 @@ local keymap = vim.keymap
 
 keymap.set("n", "<leader>l", ":nohl<CR>")
 keymap.set("n", "<leader>w", ":w<CR>")
-keymap.set("n", "x", '"_x')
-keymap.set("n", "d", '"_d')
+-- keymap.set("n", "x", '"_x')
+-- keymap.set("n", "d", '"_d')
 
 keymap.set("n", "sv", "<C-w>v")
 keymap.set("n", "sh", "<C-w>s")

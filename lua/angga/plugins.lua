@@ -47,6 +47,13 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
+	use({
+		"lukas-reineke/indent-blankline.nvim",
+		config = function()
+			require("indent_blankline").setup({ filetype_exclude = { "dashboard" } })
+		end,
+	})
+	use({ "glepnir/dashboard-nvim" })
 	use("windwp/nvim-autopairs")
 	use("NvChad/nvim-colorizer.lua")
 	use("lewis6991/gitsigns.nvim")
@@ -74,12 +81,6 @@ return packer.startup(function(use)
 			"nvim-tree/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 		},
-	})
-	use({
-		"goolord/alpha-nvim",
-		config = function()
-			require("alpha").setup(require("alpha.themes.dashboard").config)
-		end,
 	})
 	use({
 		"rest-nvim/rest.nvim",
