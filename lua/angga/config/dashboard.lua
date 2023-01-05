@@ -1,4 +1,3 @@
--- dashboard config
 local db = require("dashboard")
 
 local header = {
@@ -50,8 +49,8 @@ db.custom_center = {
 	},
 	{
 		icon = "  ",
-		desc = "Configure                ",
-		action = ":e ~/.config/nvim/init.lua",
+		desc = "Sync Plugins              ",
+		action = ":PackerSync",
 		shortcut = "         ",
 	},
 	{
