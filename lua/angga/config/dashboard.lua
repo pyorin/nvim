@@ -1,3 +1,4 @@
+-- dashboard config
 local db = require("dashboard")
 
 local header = {
