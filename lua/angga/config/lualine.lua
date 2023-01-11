@@ -39,6 +39,7 @@ local bubbles_theme = {
 local sections = {
 	lualine_a = {
 		{ "mode", separator = { left = "" }, right_padding = 0 },
+		-- { "mode", separator = { left = "" }, right_padding = 0 },
 	},
 	lualine_b = {
 		{
@@ -63,6 +64,7 @@ local sections = {
 	lualine_y = { "filetype", { "filesize" }, "diagnostics" },
 	lualine_z = {
 		{ waifu },
+		-- { "location", separator = { right = "" }, left_padding = 2 },
 		{ "location", separator = { right = "" }, left_padding = 2 },
 	},
 }
@@ -71,6 +73,7 @@ require("lualine").setup({
 	options = {
 		theme = bubbles_theme,
 		component_separators = { left = "", right = "" },
+		-- section_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
 			"NvimTree",

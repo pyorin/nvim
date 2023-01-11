@@ -1,1 +1,0 @@
-![neovim](screenshot/neovim.jpg)

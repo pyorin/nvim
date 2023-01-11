@@ -7,7 +7,6 @@ require("angga.core.colorscheme")
 -- Plugins
 require("angga.config.telescope")
 require("angga.config.cmp")
-require("angga.config.lualine")
 require("angga.config.toggleterm")
 require("angga.config.discord")
 require("angga.config.autopairs")
