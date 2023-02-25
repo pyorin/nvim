@@ -14,8 +14,8 @@ require("angga.config.treesitter")
 require("angga.config.gitsigns")
 require("angga.config.colorizer")
 require("angga.config.comments")
-require("angga.config.dashboard")
-require("angga.config.transparent")
+-- require("angga.config.dashboard")
+-- require("angga.config.transparent")
 
 -- Lsp
 require("angga.config.lsp.mason")
